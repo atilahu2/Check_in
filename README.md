@@ -25,7 +25,7 @@ class Task:
       status = "X" if self.completed 
       else " " 
       return f"[{status}] {self.title}"   
-  class UrgentTask(task):
+  class UrgentTask(Task):
     def __str__(self):
       status = "X" if self.completed else " " 
       return f"[{status}]! {self.title} (Urgent)"
