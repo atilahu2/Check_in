@@ -13,7 +13,9 @@ class task:
   def load_task ():
       if not os.path.exists(Task_file)
         return []
-
       with open( Task_file, "r") as file:
         data = j.son.load (file)
         return [Task.from_dict(item) for item in data]
+        
+
+      
